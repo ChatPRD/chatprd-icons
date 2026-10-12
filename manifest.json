@@ -1,0 +1,2466 @@
+{
+  "$comment": "Source of truth for icon metadata. SVG geometry lives in ./svg. Run `node scripts/icons/build-chatprd-icons.mjs` after editing.",
+  "version": 1,
+  "grid": {
+    "size": 24,
+    "padding": 2,
+    "strokeWidth": 1.75,
+    "linecap": "round",
+    "linejoin": "round"
+  },
+  "icons": [
+    {
+      "name": "document",
+      "group": "product",
+      "concept": "Document / PRD",
+      "tags": [
+        "doc",
+        "prd",
+        "file",
+        "page",
+        "spec"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileText",
+          "File",
+          "FileIcon",
+          "LucideFile"
+        ],
+        "heroicons": [
+          "DocumentTextIcon",
+          "DocumentIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "document-check",
+      "group": "product",
+      "concept": "Reviewed / approved document",
+      "tags": [
+        "review",
+        "approved",
+        "compliance",
+        "feedback"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [
+          "DocumentCheckIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "document-add",
+      "group": "product",
+      "concept": "New document",
+      "tags": [
+        "new",
+        "create",
+        "add",
+        "file-plus"
+      ],
+      "replaces": {
+        "lucide": [
+          "FilePlus2",
+          "FileUp"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "template",
+      "group": "product",
+      "concept": "Template",
+      "tags": [
+        "template",
+        "blueprint",
+        "format",
+        "layout",
+        "customize"
+      ],
+      "replaces": {
+        "lucide": [
+          "SquareDashedBottomCode",
+          "SquareDashedBottomCodeIcon",
+          "LayoutTemplate (templates context)"
+        ],
+        "heroicons": [
+          "ClipboardDocumentIcon (template context)"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "prototype",
+      "group": "product",
+      "concept": "Prototype (interactive screen)",
+      "tags": [
+        "prototype",
+        "preview",
+        "app",
+        "ui",
+        "build",
+        "v0"
+      ],
+      "replaces": {
+        "lucide": [
+          "LayoutTemplate",
+          "Monitor",
+          "MousePointer2"
+        ],
+        "heroicons": [
+          "ComputerDesktopIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "project",
+      "group": "product",
+      "concept": "Project",
+      "tags": [
+        "project",
+        "folder",
+        "workspace",
+        "collection"
+      ],
+      "replaces": {
+        "lucide": [
+          "FolderKanban",
+          "Folder",
+          "FolderIcon",
+          "FolderOpen"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "product",
+      "group": "product",
+      "concept": "Product / competitor",
+      "tags": [
+        "product",
+        "box",
+        "competitor",
+        "feature",
+        "package"
+      ],
+      "replaces": {
+        "lucide": [
+          "BoxIcon",
+          "Boxes",
+          "Layers"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "knowledge",
+      "group": "product",
+      "concept": "Knowledge / wiki / library",
+      "tags": [
+        "knowledge",
+        "wiki",
+        "library",
+        "files",
+        "guide",
+        "book",
+        "learn"
+      ],
+      "replaces": {
+        "lucide": [
+          "BookOpen",
+          "BookOpenIcon",
+          "Library",
+          "BookIcon"
+        ],
+        "heroicons": [
+          "BookOpenIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chat",
+      "group": "product",
+      "concept": "Chat / message",
+      "tags": [
+        "chat",
+        "message",
+        "conversation",
+        "comment",
+        "signal"
+      ],
+      "replaces": {
+        "lucide": [
+          "MessageSquare",
+          "MessageSquareIcon",
+          "MessageCircle"
+        ],
+        "heroicons": [
+          "ChatBubbleLeftIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chats",
+      "group": "product",
+      "concept": "Conversations / collaboration",
+      "tags": [
+        "chats",
+        "collaborate",
+        "team chat",
+        "thread",
+        "messages"
+      ],
+      "replaces": {
+        "lucide": [
+          "MessagesSquare"
+        ],
+        "heroicons": [
+          "ChatBubbleLeftRightIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "compose",
+      "group": "product",
+      "concept": "New chat / compose",
+      "tags": [
+        "new chat",
+        "compose",
+        "write",
+        "pen-square"
+      ],
+      "replaces": {
+        "lucide": [
+          "PenSquareIcon",
+          "MessageSquarePlus"
+        ],
+        "heroicons": [
+          "PencilSquareIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "agent",
+      "group": "product",
+      "concept": "Agent",
+      "tags": [
+        "agent",
+        "bot",
+        "assistant",
+        "automation"
+      ],
+      "replaces": {
+        "lucide": [
+          "Bot"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "sparkle",
+      "group": "product",
+      "concept": "AI / generate",
+      "tags": [
+        "ai",
+        "sparkles",
+        "magic",
+        "generate",
+        "intelligence",
+        "wand"
+      ],
+      "replaces": {
+        "lucide": [
+          "Sparkles",
+          "Wand2"
+        ],
+        "heroicons": [
+          "SparklesIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "scorecard",
+      "group": "product",
+      "concept": "Scorecard / doc feedback",
+      "tags": [
+        "scorecard",
+        "score",
+        "grade",
+        "feedback",
+        "review",
+        "report"
+      ],
+      "replaces": {
+        "lucide": [
+          "Sparkles (scorecard tool label)"
+        ],
+        "heroicons": [
+          "DocumentCheckIcon (doc review context)"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "coaching",
+      "group": "product",
+      "concept": "Product coaching",
+      "tags": [
+        "coaching",
+        "feedback",
+        "mentor",
+        "improve",
+        "growth"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [
+          "ArrowTrendingUpIcon (coaching nav)",
+          "AcademicCapIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "idea",
+      "group": "product",
+      "concept": "Idea / brainstorm",
+      "tags": [
+        "idea",
+        "brainstorm",
+        "lightbulb",
+        "insight"
+      ],
+      "replaces": {
+        "lucide": [
+          "Lightbulb"
+        ],
+        "heroicons": [
+          "LightBulbIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "mcp",
+      "group": "product",
+      "concept": "MCP (Model Context Protocol)",
+      "tags": [
+        "mcp",
+        "protocol",
+        "server",
+        "connector",
+        "ide",
+        "tools"
+      ],
+      "replaces": {
+        "lucide": [
+          "Plug (MCP settings pages)"
+        ],
+        "heroicons": [
+          "ServerIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "integrations",
+      "group": "product",
+      "concept": "Integrations / connectors",
+      "tags": [
+        "integrations",
+        "plug",
+        "connect",
+        "puzzle",
+        "apps"
+      ],
+      "replaces": {
+        "lucide": [
+          "Plug",
+          "PuzzleIcon"
+        ],
+        "heroicons": [
+          "PuzzlePieceIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "team",
+      "group": "product",
+      "concept": "Team / members",
+      "tags": [
+        "team",
+        "users",
+        "people",
+        "members",
+        "collaborate",
+        "group"
+      ],
+      "replaces": {
+        "lucide": [
+          "Users",
+          "UsersIcon",
+          "Users2"
+        ],
+        "heroicons": [
+          "UserGroupIcon",
+          "UsersIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "user",
+      "group": "product",
+      "concept": "User / profile",
+      "tags": [
+        "user",
+        "person",
+        "profile",
+        "account"
+      ],
+      "replaces": {
+        "lucide": [
+          "User",
+          "UserIcon",
+          "PersonStanding"
+        ],
+        "heroicons": [
+          "UserIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "user-add",
+      "group": "product",
+      "concept": "Invite member",
+      "tags": [
+        "invite",
+        "add user",
+        "user-plus"
+      ],
+      "replaces": {
+        "lucide": [
+          "UserPlus"
+        ],
+        "heroicons": [
+          "UserPlusIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "signals",
+      "group": "product",
+      "concept": "Signals / activity",
+      "tags": [
+        "activity",
+        "signals",
+        "pulse",
+        "intelligence",
+        "feed"
+      ],
+      "replaces": {
+        "lucide": [
+          "Activity"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "tasks",
+      "group": "product",
+      "concept": "Work / tasks",
+      "tags": [
+        "tasks",
+        "todo",
+        "work",
+        "checklist",
+        "list"
+      ],
+      "replaces": {
+        "lucide": [
+          "ListTodo",
+          "List",
+          "ListOrdered"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "roadmap",
+      "group": "product",
+      "concept": "Roadmap / plan",
+      "tags": [
+        "roadmap",
+        "plan",
+        "path",
+        "milestones",
+        "strategy"
+      ],
+      "replaces": {
+        "lucide": [
+          "GitBranch (plan context)"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "model",
+      "group": "product",
+      "concept": "AI model / reasoning",
+      "tags": [
+        "model",
+        "llm",
+        "chip",
+        "brain",
+        "reasoning",
+        "compute"
+      ],
+      "replaces": {
+        "lucide": [
+          "Brain",
+          "BrainIcon"
+        ],
+        "heroicons": [
+          "CpuChipIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "code",
+      "group": "product",
+      "concept": "Code / developer",
+      "tags": [
+        "code",
+        "developer",
+        "api",
+        "brackets",
+        "engineering"
+      ],
+      "replaces": {
+        "lucide": [
+          "Code",
+          "Code2",
+          "FileCode",
+          "FileCode2",
+          "FileJson"
+        ],
+        "heroicons": [
+          "CodeBracketIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "terminal",
+      "group": "product",
+      "concept": "Terminal / CLI / IDE",
+      "tags": [
+        "terminal",
+        "cli",
+        "ide",
+        "claude code",
+        "cursor"
+      ],
+      "replaces": {
+        "lucide": [
+          "Terminal"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "company",
+      "group": "product",
+      "concept": "Company / enterprise",
+      "tags": [
+        "company",
+        "enterprise",
+        "organization",
+        "building",
+        "office"
+      ],
+      "replaces": {
+        "lucide": [
+          "Building2"
+        ],
+        "heroicons": [
+          "BuildingOfficeIcon",
+          "BuildingOffice2Icon",
+          "BriefcaseIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "shield",
+      "group": "product",
+      "concept": "Security / compliance",
+      "tags": [
+        "security",
+        "shield",
+        "compliance",
+        "soc2",
+        "trust",
+        "privacy"
+      ],
+      "replaces": {
+        "lucide": [
+          "Shield"
+        ],
+        "heroicons": [
+          "ShieldCheckIcon",
+          "FingerPrintIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chart",
+      "group": "product",
+      "concept": "Analytics / reporting",
+      "tags": [
+        "chart",
+        "analytics",
+        "reports",
+        "stats",
+        "usage",
+        "bar"
+      ],
+      "replaces": {
+        "lucide": [
+          "BarChart3"
+        ],
+        "heroicons": [
+          "ChartBarIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "trending",
+      "group": "product",
+      "concept": "Growth / impact",
+      "tags": [
+        "trending",
+        "growth",
+        "impact",
+        "up",
+        "metrics"
+      ],
+      "replaces": {
+        "lucide": [
+          "TrendingUp"
+        ],
+        "heroicons": [
+          "ArrowTrendingUpIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "rocket",
+      "group": "product",
+      "concept": "Launch / get started",
+      "tags": [
+        "launch",
+        "rocket",
+        "ship",
+        "startup",
+        "quick start"
+      ],
+      "replaces": {
+        "lucide": [
+          "Rocket"
+        ],
+        "heroicons": [
+          "RocketLaunchIcon",
+          "FireIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "bolt",
+      "group": "product",
+      "concept": "Fast / automation",
+      "tags": [
+        "fast",
+        "bolt",
+        "zap",
+        "instant",
+        "automation",
+        "power"
+      ],
+      "replaces": {
+        "lucide": [
+          "Zap"
+        ],
+        "heroicons": [
+          "BoltIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "check",
+      "group": "ui",
+      "concept": "Confirm / done",
+      "tags": [
+        "check",
+        "done",
+        "success",
+        "selected"
+      ],
+      "replaces": {
+        "lucide": [
+          "Check",
+          "CheckIcon"
+        ],
+        "heroicons": [
+          "CheckIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "check-circle",
+      "group": "ui",
+      "concept": "Success",
+      "tags": [
+        "success",
+        "complete",
+        "verified"
+      ],
+      "replaces": {
+        "lucide": [
+          "CheckCircle2"
+        ],
+        "heroicons": [
+          "CheckCircleIcon",
+          "CheckBadgeIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "close",
+      "group": "ui",
+      "concept": "Close / dismiss",
+      "tags": [
+        "close",
+        "x",
+        "dismiss",
+        "remove",
+        "cancel"
+      ],
+      "replaces": {
+        "lucide": [
+          "X",
+          "XIcon"
+        ],
+        "heroicons": [
+          "XMarkIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "x-circle",
+      "group": "ui",
+      "concept": "Error / failed",
+      "tags": [
+        "error",
+        "failed",
+        "cancel"
+      ],
+      "replaces": {
+        "lucide": [
+          "XCircle"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "plus",
+      "group": "ui",
+      "concept": "Add",
+      "tags": [
+        "add",
+        "new",
+        "create"
+      ],
+      "replaces": {
+        "lucide": [
+          "Plus",
+          "PlusIcon",
+          "PlusCircle"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "minus",
+      "group": "ui",
+      "concept": "Remove / collapse",
+      "tags": [
+        "minus",
+        "remove",
+        "collapse"
+      ],
+      "replaces": {
+        "lucide": [
+          "Minus"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chevron-down",
+      "group": "ui",
+      "concept": "Expand / dropdown",
+      "tags": [
+        "chevron",
+        "dropdown",
+        "expand"
+      ],
+      "replaces": {
+        "lucide": [
+          "ChevronDown",
+          "ChevronDownIcon"
+        ],
+        "heroicons": [
+          "ChevronDownIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chevron-up",
+      "group": "ui",
+      "concept": "Collapse",
+      "tags": [
+        "chevron",
+        "collapse"
+      ],
+      "replaces": {
+        "lucide": [
+          "ChevronUp"
+        ],
+        "heroicons": [
+          "ChevronUpIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chevron-left",
+      "group": "ui",
+      "concept": "Previous",
+      "tags": [
+        "chevron",
+        "back",
+        "previous"
+      ],
+      "replaces": {
+        "lucide": [
+          "ChevronLeft",
+          "ChevronLeftIcon"
+        ],
+        "heroicons": [
+          "ChevronLeftIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chevron-right",
+      "group": "ui",
+      "concept": "Next / drill in",
+      "tags": [
+        "chevron",
+        "next",
+        "forward"
+      ],
+      "replaces": {
+        "lucide": [
+          "ChevronRight",
+          "ChevronRightIcon"
+        ],
+        "heroicons": [
+          "ChevronRightIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "chevrons-up-down",
+      "group": "ui",
+      "concept": "Select / sort",
+      "tags": [
+        "select",
+        "sort",
+        "switcher"
+      ],
+      "replaces": {
+        "lucide": [
+          "ChevronsUpDown"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "arrow-right",
+      "group": "ui",
+      "concept": "Go / continue",
+      "tags": [
+        "arrow",
+        "next",
+        "cta",
+        "continue"
+      ],
+      "replaces": {
+        "lucide": [
+          "ArrowRight",
+          "ArrowRightIcon"
+        ],
+        "heroicons": [
+          "ArrowRightIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "arrow-left",
+      "group": "ui",
+      "concept": "Back",
+      "tags": [
+        "arrow",
+        "back",
+        "previous"
+      ],
+      "replaces": {
+        "lucide": [
+          "ArrowLeft",
+          "ArrowLeftIcon"
+        ],
+        "heroicons": [
+          "ArrowLeftIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "arrow-up",
+      "group": "ui",
+      "concept": "Up / send",
+      "tags": [
+        "arrow",
+        "up",
+        "sort"
+      ],
+      "replaces": {
+        "lucide": [
+          "ArrowUp"
+        ],
+        "heroicons": [
+          "ArrowUpIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "arrow-down",
+      "group": "ui",
+      "concept": "Down",
+      "tags": [
+        "arrow",
+        "down",
+        "sort"
+      ],
+      "replaces": {
+        "lucide": [
+          "ArrowDown",
+          "ArrowDownIcon"
+        ],
+        "heroicons": [
+          "ArrowDownIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "arrow-up-right",
+      "group": "ui",
+      "concept": "Open / jump",
+      "tags": [
+        "arrow",
+        "open",
+        "go"
+      ],
+      "replaces": {
+        "lucide": [
+          "ArrowUpRight"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "external-link",
+      "group": "ui",
+      "concept": "Open in new tab",
+      "tags": [
+        "external",
+        "new tab",
+        "open"
+      ],
+      "replaces": {
+        "lucide": [
+          "ExternalLink"
+        ],
+        "heroicons": [
+          "ArrowTopRightOnSquareIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "search",
+      "group": "ui",
+      "concept": "Search",
+      "tags": [
+        "search",
+        "find",
+        "magnifier"
+      ],
+      "replaces": {
+        "lucide": [
+          "Search",
+          "SearchIcon"
+        ],
+        "heroicons": [
+          "MagnifyingGlassIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "menu",
+      "group": "ui",
+      "concept": "Menu",
+      "tags": [
+        "menu",
+        "hamburger",
+        "nav"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [
+          "Bars3Icon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "more-horizontal",
+      "group": "ui",
+      "concept": "More actions",
+      "tags": [
+        "more",
+        "ellipsis",
+        "overflow"
+      ],
+      "replaces": {
+        "lucide": [
+          "MoreHorizontal"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "more-vertical",
+      "group": "ui",
+      "concept": "More actions (vertical)",
+      "tags": [
+        "more",
+        "ellipsis",
+        "kebab"
+      ],
+      "replaces": {
+        "lucide": [
+          "GripVertical"
+        ],
+        "heroicons": [
+          "EllipsisVerticalIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "loader",
+      "group": "ui",
+      "concept": "Loading",
+      "tags": [
+        "loading",
+        "spinner",
+        "progress"
+      ],
+      "replaces": {
+        "lucide": [
+          "Loader2",
+          "Loader2Icon"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "refresh",
+      "group": "ui",
+      "concept": "Refresh / sync",
+      "tags": [
+        "refresh",
+        "sync",
+        "regenerate",
+        "retry"
+      ],
+      "replaces": {
+        "lucide": [
+          "RefreshCw"
+        ],
+        "heroicons": [
+          "ArrowPathIcon",
+          "ArrowsRightLeftIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "undo",
+      "group": "ui",
+      "concept": "Undo / reset / restore",
+      "tags": [
+        "undo",
+        "reset",
+        "restore",
+        "rotate"
+      ],
+      "replaces": {
+        "lucide": [
+          "RotateCcw"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "history",
+      "group": "ui",
+      "concept": "History / versions",
+      "tags": [
+        "history",
+        "versions",
+        "recent"
+      ],
+      "replaces": {
+        "lucide": [
+          "History"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "clock",
+      "group": "ui",
+      "concept": "Time / duration",
+      "tags": [
+        "time",
+        "clock",
+        "duration",
+        "saved"
+      ],
+      "replaces": {
+        "lucide": [
+          "Clock",
+          "Clock3"
+        ],
+        "heroicons": [
+          "ClockIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "calendar",
+      "group": "ui",
+      "concept": "Date / event",
+      "tags": [
+        "calendar",
+        "date",
+        "event",
+        "schedule"
+      ],
+      "replaces": {
+        "lucide": [
+          "Calendar"
+        ],
+        "heroicons": [
+          "CalendarIcon",
+          "CalendarDaysIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "settings",
+      "group": "ui",
+      "concept": "Settings / customize",
+      "tags": [
+        "settings",
+        "preferences",
+        "sliders",
+        "gear",
+        "configure"
+      ],
+      "replaces": {
+        "lucide": [
+          "Settings"
+        ],
+        "heroicons": [
+          "CogIcon",
+          "Cog6ToothIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "share",
+      "group": "ui",
+      "concept": "Share",
+      "tags": [
+        "share",
+        "send",
+        "export"
+      ],
+      "replaces": {
+        "lucide": [
+          "Share2"
+        ],
+        "heroicons": [
+          "ShareIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "link",
+      "group": "ui",
+      "concept": "Link / URL",
+      "tags": [
+        "link",
+        "url",
+        "chain",
+        "permalink"
+      ],
+      "replaces": {
+        "lucide": [
+          "Link",
+          "LinkIcon",
+          "Link2",
+          "Link2Icon"
+        ],
+        "heroicons": [
+          "LinkIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "copy",
+      "group": "ui",
+      "concept": "Copy / duplicate",
+      "tags": [
+        "copy",
+        "duplicate",
+        "clipboard"
+      ],
+      "replaces": {
+        "lucide": [
+          "Copy",
+          "CopyIcon"
+        ],
+        "heroicons": [
+          "ClipboardDocumentIcon",
+          "DocumentDuplicateIcon",
+          "ClipboardIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "edit",
+      "group": "ui",
+      "concept": "Edit",
+      "tags": [
+        "edit",
+        "pencil",
+        "rename",
+        "write"
+      ],
+      "replaces": {
+        "lucide": [
+          "Pencil",
+          "Edit3",
+          "PenLine"
+        ],
+        "heroicons": [
+          "PencilIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "trash",
+      "group": "ui",
+      "concept": "Delete",
+      "tags": [
+        "delete",
+        "trash",
+        "remove",
+        "bin"
+      ],
+      "replaces": {
+        "lucide": [
+          "Trash",
+          "Trash2"
+        ],
+        "heroicons": [
+          "TrashIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "pin",
+      "group": "ui",
+      "concept": "Pin",
+      "tags": [
+        "pin",
+        "favorite",
+        "keep"
+      ],
+      "replaces": {
+        "lucide": [
+          "Pin",
+          "PinOff"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "eye",
+      "group": "ui",
+      "concept": "View / preview",
+      "tags": [
+        "view",
+        "preview",
+        "visible",
+        "show"
+      ],
+      "replaces": {
+        "lucide": [
+          "Eye"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "eye-off",
+      "group": "ui",
+      "concept": "Hide",
+      "tags": [
+        "hide",
+        "hidden",
+        "invisible",
+        "private"
+      ],
+      "replaces": {
+        "lucide": [
+          "EyeOff"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "star",
+      "group": "ui",
+      "concept": "Rating / favorite",
+      "tags": [
+        "star",
+        "rating",
+        "favorite",
+        "review"
+      ],
+      "replaces": {
+        "lucide": [
+          "Star",
+          "StarHalf",
+          "StarHalfIcon"
+        ],
+        "heroicons": [
+          "StarIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "upload",
+      "group": "ui",
+      "concept": "Upload",
+      "tags": [
+        "upload",
+        "import",
+        "attach file"
+      ],
+      "replaces": {
+        "lucide": [
+          "Upload"
+        ],
+        "heroicons": [
+          "ArrowUpTrayIcon",
+          "CloudArrowUpIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "download",
+      "group": "ui",
+      "concept": "Download / export",
+      "tags": [
+        "download",
+        "export",
+        "save"
+      ],
+      "replaces": {
+        "lucide": [
+          "Download",
+          "DownloadIcon",
+          "Save",
+          "SaveIcon"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "send",
+      "group": "ui",
+      "concept": "Send",
+      "tags": [
+        "send",
+        "submit",
+        "message"
+      ],
+      "replaces": {
+        "lucide": [
+          "Send",
+          "SendIcon",
+          "SendHorizonal"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "attach",
+      "group": "ui",
+      "concept": "Attach file",
+      "tags": [
+        "attach",
+        "paperclip",
+        "file"
+      ],
+      "replaces": {
+        "lucide": [
+          "Paperclip"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "image",
+      "group": "ui",
+      "concept": "Image",
+      "tags": [
+        "image",
+        "photo",
+        "screenshot",
+        "media"
+      ],
+      "replaces": {
+        "lucide": [
+          "ImageIcon",
+          "FileImage",
+          "LucideFileImage"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "mail",
+      "group": "ui",
+      "concept": "Email / newsletter",
+      "tags": [
+        "mail",
+        "email",
+        "newsletter",
+        "inbox"
+      ],
+      "replaces": {
+        "lucide": [
+          "InboxIcon"
+        ],
+        "heroicons": [
+          "EnvelopeIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "info",
+      "group": "ui",
+      "concept": "Info",
+      "tags": [
+        "info",
+        "about",
+        "details"
+      ],
+      "replaces": {
+        "lucide": [
+          "Info"
+        ],
+        "heroicons": [
+          "InformationCircleIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "alert-circle",
+      "group": "ui",
+      "concept": "Error / attention",
+      "tags": [
+        "alert",
+        "error",
+        "attention"
+      ],
+      "replaces": {
+        "lucide": [
+          "AlertCircle"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "alert-triangle",
+      "group": "ui",
+      "concept": "Warning",
+      "tags": [
+        "warning",
+        "caution",
+        "alert"
+      ],
+      "replaces": {
+        "lucide": [
+          "AlertTriangle"
+        ],
+        "heroicons": [
+          "ExclamationTriangleIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "help",
+      "group": "ui",
+      "concept": "Help / support",
+      "tags": [
+        "help",
+        "support",
+        "question",
+        "faq"
+      ],
+      "replaces": {
+        "lucide": [
+          "HelpCircleIcon",
+          "LifeBuoy"
+        ],
+        "heroicons": [
+          "QuestionMarkCircleIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "home",
+      "group": "ui",
+      "concept": "Home / overview",
+      "tags": [
+        "home",
+        "overview",
+        "dashboard"
+      ],
+      "replaces": {
+        "lucide": [
+          "Home",
+          "LayoutDashboard",
+          "LayoutGrid"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "sidebar",
+      "group": "ui",
+      "concept": "Toggle sidebar / panel",
+      "tags": [
+        "sidebar",
+        "panel",
+        "layout"
+      ],
+      "replaces": {
+        "lucide": [
+          "PanelLeft",
+          "PanelLeftClose"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "play",
+      "group": "ui",
+      "concept": "Play / watch",
+      "tags": [
+        "play",
+        "video",
+        "watch",
+        "demo"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [
+          "PlayCircleIcon",
+          "FilmIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "filter",
+      "group": "ui",
+      "concept": "Filter",
+      "tags": [
+        "filter",
+        "funnel",
+        "refine"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [
+          "FunnelIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "credit-card",
+      "group": "ui",
+      "concept": "Billing",
+      "tags": [
+        "billing",
+        "payment",
+        "card",
+        "plan"
+      ],
+      "replaces": {
+        "lucide": [
+          "CreditCardIcon"
+        ],
+        "heroicons": [
+          "CreditCardIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "mic",
+      "group": "ui",
+      "concept": "Voice / tone",
+      "tags": [
+        "mic",
+        "voice",
+        "audio",
+        "dictate",
+        "tone"
+      ],
+      "replaces": {
+        "lucide": [
+          "Mic"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "lock",
+      "group": "ui",
+      "concept": "Private / locked",
+      "tags": [
+        "lock",
+        "private",
+        "secure",
+        "sso"
+      ],
+      "replaces": {
+        "lucide": [
+          "Lock",
+          "LockIcon"
+        ],
+        "heroicons": [
+          "LockClosedIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "key",
+      "group": "ui",
+      "concept": "API key / access",
+      "tags": [
+        "key",
+        "api key",
+        "access",
+        "sso",
+        "credentials"
+      ],
+      "replaces": {
+        "lucide": [
+          "KeyRound"
+        ],
+        "heroicons": [
+          "KeyIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "globe",
+      "group": "ui",
+      "concept": "Web / public / sources",
+      "tags": [
+        "web",
+        "globe",
+        "public",
+        "website",
+        "sources",
+        "language"
+      ],
+      "replaces": {
+        "lucide": [
+          "Globe",
+          "Globe2",
+          "Languages"
+        ],
+        "heroicons": [
+          "GlobeAltIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "tool",
+      "group": "status",
+      "concept": "Tool",
+      "tags": [
+        "tool",
+        "wrench",
+        "tools",
+        "capability"
+      ],
+      "replaces": {
+        "lucide": [
+          "Wrench",
+          "WrenchIcon"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "tool-call",
+      "group": "status",
+      "concept": "Tool call (AI used a tool)",
+      "tags": [
+        "tool call",
+        "tool use",
+        "function call",
+        "agent step"
+      ],
+      "replaces": {
+        "lucide": [
+          "Wrench (tool-display context)"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "running",
+      "group": "status",
+      "concept": "Running",
+      "tags": [
+        "running",
+        "in progress",
+        "agent run",
+        "executing"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "queued",
+      "group": "status",
+      "concept": "Queued / waiting",
+      "tags": [
+        "queued",
+        "waiting",
+        "pending",
+        "scheduled",
+        "hourglass"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "streaming",
+      "group": "status",
+      "concept": "Streaming / typing",
+      "tags": [
+        "streaming",
+        "typing",
+        "generating",
+        "thinking"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "pending",
+      "group": "status",
+      "concept": "Awaiting review / approval",
+      "tags": [
+        "pending",
+        "awaiting review",
+        "approval requested",
+        "needs input"
+      ],
+      "replaces": {
+        "lucide": [],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "stop",
+      "group": "status",
+      "concept": "Stop generating",
+      "tags": [
+        "stop",
+        "halt",
+        "abort"
+      ],
+      "replaces": {
+        "lucide": [
+          "Square",
+          "SquareIcon"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "cancelled",
+      "group": "status",
+      "concept": "Cancelled / denied / disabled",
+      "tags": [
+        "cancelled",
+        "denied",
+        "blocked",
+        "disabled",
+        "ban"
+      ],
+      "replaces": {
+        "lucide": [
+          "Ban"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "retry",
+      "group": "status",
+      "concept": "Retry",
+      "tags": [
+        "retry",
+        "rerun",
+        "try again",
+        "rotate"
+      ],
+      "replaces": {
+        "lucide": [
+          "RotateCw"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "link-off",
+      "group": "status",
+      "concept": "Disconnected / needs auth",
+      "tags": [
+        "disconnected",
+        "needs authentication",
+        "unlink",
+        "reconnect"
+      ],
+      "replaces": {
+        "lucide": [
+          "Unlink"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "panel-right",
+      "group": "status",
+      "concept": "Toggle side panel (right)",
+      "tags": [
+        "panel",
+        "artifact panel",
+        "sidebar right",
+        "preview panel"
+      ],
+      "replaces": {
+        "lucide": [
+          "PanelRightOpen",
+          "PanelRightClose"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    }
+  ],
+  "spotGrid": {
+    "size": 64,
+    "padding": 4,
+    "defaultRenderSize": 56,
+    "style": "flat",
+    "keylines": {
+      "circle": {
+        "d": 52
+      },
+      "square": {
+        "w": 46,
+        "h": 46
+      },
+      "portrait": {
+        "w": 42,
+        "h": 52
+      },
+      "landscape": {
+        "w": 54,
+        "h": 42
+      }
+    },
+    "smallKeylines": {
+      "circle": {
+        "d": 20
+      },
+      "square": {
+        "w": 18,
+        "h": 18
+      },
+      "portrait": {
+        "w": 16,
+        "h": 20
+      },
+      "landscape": {
+        "w": 20,
+        "h": 16
+      }
+    },
+    "standards": {
+      "cardRadius": 4,
+      "smallPartRadius": 1.5,
+      "textBar": 3,
+      "detailStroke": 3,
+      "symbolStroke": 4,
+      "hairline": "1px #E7E4EA"
+    }
+  },
+  "palette": {
+    "rose": {
+      "deep": "#C1125A",
+      "base": "#FF2E7E",
+      "light": "#FF4FA3",
+      "highlight": "#FFE6F0"
+    },
+    "coral": {
+      "deep": "#C23A12",
+      "base": "#FF4B26",
+      "light": "#FFB199",
+      "highlight": "#FFE7DF"
+    },
+    "violet": {
+      "deep": "#5B21B6",
+      "base": "#8B3DFF",
+      "light": "#A66BFF",
+      "highlight": "#E4D6FF"
+    },
+    "green": {
+      "deep": "#15803D",
+      "base": "#16A34A",
+      "light": "#4ADE80",
+      "highlight": "#DCFCE7"
+    },
+    "amber": {
+      "deep": "#B45309",
+      "base": "#F59E0B",
+      "light": "#FCD34D",
+      "highlight": "#FEF3C7"
+    },
+    "red": {
+      "deep": "#B91C1C",
+      "base": "#DC2626",
+      "light": "#F87171",
+      "highlight": "#FEE2E2"
+    },
+    "blue": {
+      "deep": "#1D4ED8",
+      "base": "#3B82F6",
+      "light": "#93C5FD",
+      "highlight": "#DBEAFE"
+    },
+    "gold": {
+      "deep": "#A86A00",
+      "base": "#E39200",
+      "light": "#FFC94D",
+      "highlight": "#FFF3D1"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "paper": "#F7F6F9",
+      "lightGray": "#E7E4EA",
+      "midGray": "#B9B4BF",
+      "charcoal": "#3A3640",
+      "ink": "#0B0A10"
+    }
+  },
+  "spots": [
+    {
+      "name": "document",
+      "concept": "Document / PRD",
+      "line": "document",
+      "keyline": "portrait",
+      "lead": "rose",
+      "app": "pink"
+    },
+    {
+      "name": "template",
+      "concept": "Template",
+      "line": "template",
+      "keyline": "square",
+      "lead": "violet",
+      "second": "rose",
+      "app": "teal"
+    },
+    {
+      "name": "project",
+      "concept": "Project",
+      "line": "project",
+      "keyline": "landscape",
+      "lead": "rose",
+      "app": "slate"
+    },
+    {
+      "name": "scorecard",
+      "concept": "Scorecard / review",
+      "line": "scorecard",
+      "keyline": "portrait",
+      "lead": "rose",
+      "second": "violet",
+      "accent": "green",
+      "app": "rose",
+      "appRoles": {
+        "accent": "green"
+      }
+    },
+    {
+      "name": "coaching",
+      "concept": "Product coaching",
+      "line": "coaching",
+      "keyline": "landscape",
+      "lead": "rose",
+      "app": "violet"
+    },
+    {
+      "name": "prototype",
+      "concept": "Prototype",
+      "line": "prototype",
+      "keyline": "landscape",
+      "lead": "rose",
+      "app": "violet"
+    },
+    {
+      "name": "agent",
+      "concept": "Agent",
+      "line": "agent",
+      "keyline": "square",
+      "lead": "rose",
+      "second": "violet",
+      "app": "accent"
+    },
+    {
+      "name": "integrations",
+      "concept": "Integrations / MCP",
+      "line": "integrations",
+      "keyline": "square",
+      "lead": "rose",
+      "app": "teal"
+    },
+    {
+      "name": "team",
+      "concept": "Team",
+      "line": "team",
+      "keyline": "circle",
+      "lead": "rose",
+      "app": "pink"
+    },
+    {
+      "name": "knowledge",
+      "concept": "Knowledge",
+      "line": "knowledge",
+      "keyline": "landscape",
+      "lead": "rose",
+      "app": "slate"
+    },
+    {
+      "name": "chat",
+      "concept": "Chat",
+      "line": "chat",
+      "keyline": "landscape",
+      "lead": "rose",
+      "app": "accent"
+    },
+    {
+      "name": "security",
+      "concept": "Enterprise / security",
+      "line": "shield",
+      "keyline": "portrait",
+      "lead": "gold",
+      "app": "gold"
+    }
+  ],
+  "spotTones": {
+    "$comment": "Tone variants of every spot. Source SVGs keep brand hexes; codegen maps each fill to a role (lead/second/accent tone or neutral) and re-renders it per tone. In non-brand tones the second family maps onto the tone's own family via secondTone (base → light) so the two planes stay distinct. Raw exports: color/<tone>/<name>.svg.",
+    "tones": [
+      "brand",
+      "tint",
+      "rose",
+      "coral",
+      "violet",
+      "ink",
+      "white",
+      "app",
+      "app-accent",
+      "app-violet",
+      "app-pink",
+      "app-rose",
+      "app-teal",
+      "app-slate"
+    ],
+    "mono": [
+      "rose",
+      "coral",
+      "violet"
+    ],
+    "monoAccentTone": "light",
+    "ink": {
+      "deep": "#0B0A10",
+      "base": "#4A4652",
+      "light": "#B9B4BF",
+      "highlight": "#E7E4EA"
+    },
+    "white": {
+      "roles": {
+        "deep": 0.45,
+        "base": 1,
+        "light": 0.7,
+        "highlight": 0.85
+      },
+      "neutral": {
+        "white": 0.22,
+        "paper": 0.22,
+        "lightGray": 0.4,
+        "midGray": 0.6,
+        "ink": 1,
+        "charcoal": 0.55
+      },
+      "knockout": {
+        "color": "#0B0A10",
+        "opacity": 0.55
+      }
+    },
+    "exports": "color/<tone>/<name>.svg",
+    "secondTone": {
+      "deep": "deep",
+      "base": "light",
+      "light": "light",
+      "highlight": "highlight"
+    },
+    "thirdTone": {
+      "deep": "deep",
+      "base": "deep",
+      "light": "base",
+      "highlight": "light"
+    },
+    "tint": {
+      "$comment": "Line icon geometry, lead-color stroke, closed shapes filled at 18% (the app DuotoneIcon treatment).",
+      "fillOpacity": 0.18
+    }
+  },
+  "spotSmall": {
+    "$comment": "Simplified 24×24 drawings of every spot for 20–32px. Same lead family and role tokens as the full spot, at most two tones plus white. Source: color-small/<name>.svg; tone exports: color-small/<tone>/<name>.svg.",
+    "grid": 24,
+    "autoMaxSize": 32,
+    "exports": "color-small/<tone>/<name>.svg"
+  },
+  "appPalette": {
+    "$comment": "ChatPRD app tones. Spots render with these CSS variables when tone is \"app\" or \"app-<family>\"; hexes are the fallbacks (light) and the dark-mode values for previews. Green and orange are reserved for states and aren't spot families.",
+    "families": {
+      "accent": {
+        "var": "--ds-accent",
+        "light": "#5B3DEE",
+        "dark": "#5B3DEE",
+        "soft": "--ds-accent-soft",
+        "meaning": "primary AI, agents"
+      },
+      "violet": {
+        "var": "--tone-violet",
+        "light": "#8B5CF6",
+        "dark": "#A78BFA",
+        "soft": "--tone-violet-soft",
+        "meaning": "exploratory, creative"
+      },
+      "pink": {
+        "var": "--tone-pink",
+        "light": "#EC4899",
+        "dark": "#F472B6",
+        "soft": "--tone-pink-soft",
+        "meaning": "personal, content"
+      },
+      "rose": {
+        "var": "--tone-rose",
+        "light": "#F43F5E",
+        "dark": "#FB7185",
+        "soft": "--tone-rose-soft",
+        "meaning": "drafts, review"
+      },
+      "teal": {
+        "var": "--tone-teal",
+        "light": "#0D9488",
+        "dark": "#2DD4BF",
+        "soft": "--tone-teal-soft",
+        "meaning": "structured, technical"
+      },
+      "slate": {
+        "var": "--tone-slate",
+        "light": "#475569",
+        "dark": "#94A3B8",
+        "soft": "--tone-slate-soft",
+        "meaning": "quiet structural"
+      },
+      "green": {
+        "var": "--ds-green",
+        "light": "#16A34A",
+        "dark": "#22C55E",
+        "soft": "--ds-green-soft",
+        "meaning": "success / connected (state only)"
+      },
+      "amber": {
+        "var": "--ds-orange",
+        "light": "#F96B2F",
+        "dark": "#FF8855",
+        "soft": "--ds-orange-soft",
+        "meaning": "warning (state only)"
+      },
+      "gold": {
+        "var": "--icon-gold",
+        "light": "#E39200",
+        "dark": "#FFC94D",
+        "meaning": "trust / protection (security shield); no app token yet, so the hex fallback applies"
+      }
+    },
+    "neutral": {
+      "white": {
+        "var": "--panel",
+        "light": "#FFFFFF",
+        "dark": "#18181B"
+      },
+      "paper": {
+        "var": "--surface",
+        "light": "#F4F4F5",
+        "dark": "#27272A"
+      },
+      "lightGray": {
+        "var": "--surface-active",
+        "light": "#EEEEF0",
+        "dark": "#3B3B40"
+      },
+      "midGray": {
+        "var": "--text-4",
+        "light": "#A1A1AA",
+        "dark": "#71717A"
+      },
+      "ink": {
+        "var": "--text",
+        "light": "#18181B",
+        "dark": "#FAFAFA"
+      },
+      "charcoal": {
+        "var": "--text-2",
+        "light": "#3F3F46",
+        "dark": "#D4D4D8"
+      }
+    },
+    "states": {
+      "success": {
+        "var": "--ds-green",
+        "light": "#16A34A",
+        "dark": "#22C55E"
+      },
+      "warning": {
+        "var": "--ds-orange",
+        "light": "#F96B2F",
+        "dark": "#FF8855"
+      }
+    },
+    "roles": {
+      "deep": {
+        "mixBlack": 0.28
+      },
+      "base": {
+        "opacity": 1
+      },
+      "light": {
+        "opacity": 0.55
+      },
+      "highlight": {
+        "opacity": 0.18
+      }
+    }
+  },
+  "spotRules": {
+    "$comment": "Neutrals (white, paper, gray, charcoal, ink) are real materials; brand color (pink, coral, purple) marks the meaningful part. Green/amber/red/blue are small semantic accents only. Gold is the semantic trust color and leads the security shield only.",
+    "brandFamilies": [
+      "rose",
+      "coral",
+      "violet"
+    ],
+    "semanticFamilies": [
+      "green",
+      "amber",
+      "red",
+      "blue",
+      "gold"
+    ],
+    "semanticLeads": {
+      "security": [
+        "gold"
+      ]
+    },
+    "requiredLeads": {
+      "security": "gold"
+    },
+    "pairs": [
+      [
+        "rose",
+        "coral"
+      ],
+      [
+        "rose",
+        "violet"
+      ]
+    ],
+    "triads": [
+      [
+        "coral",
+        "rose",
+        "violet"
+      ]
+    ],
+    "maxAccentElements": 3,
+    "core": "rose",
+    "minSpotsWithCore": 8,
+    "maxLeadPerFamily": 10
+  }
+}
