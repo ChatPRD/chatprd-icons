@@ -143,7 +143,8 @@ function parseSvg(dir, file, kind) {
     // A lead family, optionally one "second" family that must be a neighbouring brand-gradient stop
     // (manifest.spotRules.pairs), and optionally one small "accent".
     if (meta?.second) {
-      if (kind === "spot" && !fillsByFamily[meta.second]) errors.push(`${label}: second family "${meta.second}" isn't used in the artwork`);
+      // The second family may appear in either drawing (full or small); checked once both are parsed.
+      if (kind !== "line") (secondUse[meta.name] ??= new Set()).add(fillsByFamily[meta.second] ? kind : null);
       const ok = (rules.pairs ?? []).some(([a, b]) => (a === meta.lead && b === meta.second) || (b === meta.lead && a === meta.second));
       if (!ok) errors.push(`${label}: ${meta.lead} + ${meta.second} isn't an allowed pair (${(rules.pairs ?? []).map((x) => x.join("+")).join(", ")})`);
     }
@@ -178,6 +179,7 @@ function parseSvg(dir, file, kind) {
   return nodes;
 }
 
+const secondUse = {}; // spot name -> drawings ("spot", "small") that use its second family
 const entries = files.map((f) => {
   const name = f.replace(/\.svg$/, "");
   return { name, component: `Icon${pascal(name)}`, nodes: parseSvg(svgDir, f, "line"), meta: manifest.icons.find((i) => i.name === name) };
@@ -211,6 +213,9 @@ if (fs.existsSync(smallDir)) {
     if (cols.size > maxCols) errors.push(`color-small/${f}: uses ${cols.size} colors plus white (${[...cols].join(", ")}); max ${maxCols}`);
     // Neutrals are real materials, so grays and charcoal may fill shapes; they count toward the color limit.
   }
+  for (const s of spots)
+    if (s.meta?.second && ![...(secondUse[s.name] ?? [])].some(Boolean))
+      errors.push(`${s.name}: second family "${s.meta.second}" isn't used in the full or small drawing`);
   for (const f of fs.readdirSync(smallDir).filter((x) => x.endsWith(".svg")))
     if (!spotNames.has(f.replace(/\.svg$/, ""))) errors.push(`color-small/${f}: no matching spot in manifest.json`);
 }

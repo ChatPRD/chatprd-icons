@@ -6,7 +6,8 @@ All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](h
 
 ### Changed
 
-- team: redrawn as two people for legibility at small sizes. The small spot drawing (`color-small/team.svg`) follows the new line icon, with the same colors (rose front, charcoal back); the full spot is unchanged.
+- team: redrawn as two people for legibility at small sizes. The small spot drawing (`color-small/team.svg`) follows the new line icon: a rose front figure and a violet back figure, separated by a cut-out gap instead of a white outline, so it reads on any background. The team spot now lists violet as its `second` family; the full spot is unchanged.
+- Build check: a spot's `second` family may appear in either its full or its small drawing.
 
 ## 1.0.0 - 2026-10-12
 
