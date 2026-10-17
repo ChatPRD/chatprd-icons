@@ -14,10 +14,10 @@ Released as **`@chatprd/icons`** tarballs on [GitHub Releases](https://github.co
 Install a release tarball directly; no registry account or token is needed:
 
 ```bash
-npm install https://github.com/ChatPRD/chatprd-icons/releases/download/v1.0.0/chatprd-icons-1.0.0.tgz
+npm install https://github.com/ChatPRD/chatprd-icons/releases/download/v1.0.1/chatprd-icons-1.0.1.tgz
 ```
 
-That adds `"@chatprd/icons": "https://github.com/ChatPRD/chatprd-icons/releases/download/v1.0.0/chatprd-icons-1.0.0.tgz"` to your `package.json`. To upgrade, change the version in that URL (both places) and reinstall.
+That adds `"@chatprd/icons": "https://github.com/ChatPRD/chatprd-icons/releases/download/v1.0.1/chatprd-icons-1.0.1.tgz"` to your `package.json`. To upgrade, change the version in that URL (both places) and reinstall.
 
 `react` 18 or later is a peer dependency.
 

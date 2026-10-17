@@ -2,6 +2,13 @@
 
 All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package uses [semver](https://semver.org/) (see "Releasing" in the README for what counts as major, minor and patch for icons).
 
+## 1.0.1 - 2026-10-17
+
+### Changed
+
+- team: redrawn as two people for legibility at small sizes. The small spot drawing (`color-small/team.svg`) follows the new line icon: a rose front figure and a violet back figure, separated by a cut-out gap instead of a white outline, so it reads on any background. The team spot now lists violet as its `second` family; the full spot is unchanged.
+- Build check: a spot's `second` family may appear in either its full or its small drawing.
+
 ## 1.0.0 - 2026-10-12
 
 First release as a package: 100 line icons, 12 spot icons with tones and a small tier, animated loaders, and raw SVG exports.
