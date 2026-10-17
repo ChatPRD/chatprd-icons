@@ -2,6 +2,12 @@
 
 All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package uses [semver](https://semver.org/) (see "Releasing" in the README for what counts as major, minor and patch for icons).
 
+## 1.0.2 - 2026-10-17
+
+### Fixed
+
+- `IconSpinner` and `IconStreamingDots` no longer render a `<style>` element inside the SVG. Its CSS showed up in the `textContent` of every ancestor (status regions, buttons, test queries). The keyframes are now injected once into `document.head` on mount, so the markup is shapes only. Under server rendering the icons sit still until hydration.
+
 ## 1.0.1 - 2026-10-17
 
 ### Changed

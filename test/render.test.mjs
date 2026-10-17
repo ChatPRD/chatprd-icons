@@ -65,3 +65,11 @@ test("raw SVG exports resolve", () => {
   for (const spec of ["@chatprd/icons/svg/document.svg", "@chatprd/icons/color/document.svg", "@chatprd/icons/color/rose/document.svg", "@chatprd/icons/color-small/white/agent.svg", "@chatprd/icons/manifest.json"])
     assert.ok(fs.existsSync(require.resolve(spec)), spec);
 });
+
+test("animated icons render shapes only, with no text content", () => {
+  for (const C of [root.IconSpinner, root.IconStreamingDots]) {
+    const out = html(C);
+    assert.ok(!out.includes("<style"), `${C.displayName ?? C.name} must not render a <style> element`);
+    assert.equal(out.replace(/<[^>]+>/g, ""), "");
+  }
+});

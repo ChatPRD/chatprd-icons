@@ -6,8 +6,10 @@ import * as React from "react";
 
 import type { ChatPRDIconProps } from "./runtime.js";
 
-// Keyframes live inside each SVG so the components work without a global stylesheet.
-// Identical <style> blocks from several instances are harmless.
+// Keyframes are injected once into document.head rather than rendered inside each SVG.
+// A <style> element inside the icon would leak its CSS into the textContent of every
+// ancestor (status regions, buttons, test queries), so the components keep their
+// markup to shapes only and need no global stylesheet from the app.
 const SPINNER_CSS = `
 @keyframes chatprd-spin { to { transform: rotate(360deg); } }
 .chatprd-spinner-arc { transform-origin: 12px 12px; animation: chatprd-spin 0.9s linear infinite; }
@@ -21,6 +23,16 @@ const DOTS_CSS = `
 .chatprd-dots circle:nth-of-type(3) { animation-delay: 0.3s; }
 @media (prefers-reduced-motion: reduce) { .chatprd-dots circle { animation: none; opacity: 1; } }
 `;
+
+function useGlobalStyle(id: string, css: string) {
+  React.useInsertionEffect(() => {
+    if (typeof document === "undefined" || document.getElementById(id)) return;
+    const style = document.createElement("style");
+    style.id = id;
+    style.textContent = css;
+    document.head.appendChild(style);
+  }, [id, css]);
+}
 
 function useA11y(title?: string) {
   const titleId = React.useId();
@@ -40,6 +52,7 @@ export const IconSpinner = React.forwardRef<SVGSVGElement, ChatPRDIconProps>(fun
   ref,
 ) {
   const { titleId, attrs } = useA11y(title ?? undefined);
+  useGlobalStyle("chatprd-icons-spinner", SPINNER_CSS);
   const sw = absoluteStrokeWidth && typeof size === "number" ? (Number(strokeWidth) * 24) / size : strokeWidth;
   return (
     <svg
@@ -59,7 +72,6 @@ export const IconSpinner = React.forwardRef<SVGSVGElement, ChatPRDIconProps>(fun
       {...rest}
     >
       {title ? <title id={titleId}>{title}</title> : null}
-      <style>{SPINNER_CSS}</style>
       <circle cx="12" cy="12" r="8.5" opacity="0.2" />
       <path className="chatprd-spinner-arc" d="M20.5 12A8.5 8.5 0 1 1 12 3.5" />
     </svg>
@@ -75,6 +87,7 @@ export const IconStreamingDots = React.forwardRef<SVGSVGElement, ChatPRDIconProp
   ref,
 ) {
   const { titleId, attrs } = useA11y(title ?? undefined);
+  useGlobalStyle("chatprd-icons-streaming-dots", DOTS_CSS);
   return (
     <svg
       ref={ref}
@@ -89,7 +102,6 @@ export const IconStreamingDots = React.forwardRef<SVGSVGElement, ChatPRDIconProp
       {...rest}
     >
       {title ? <title id={titleId}>{title}</title> : null}
-      <style>{DOTS_CSS}</style>
       <circle cx="6" cy="12" r="2" />
       <circle cx="12" cy="12" r="2" />
       <circle cx="18" cy="12" r="2" />
