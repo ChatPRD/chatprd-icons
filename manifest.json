@@ -497,7 +497,6 @@
       "replaces": {
         "lucide": [
           "ListTodo",
-          "List",
           "ListOrdered"
         ],
         "heroicons": [],
@@ -1379,8 +1378,7 @@
       ],
       "replaces": {
         "lucide": [
-          "Pin",
-          "PinOff"
+          "Pin"
         ],
         "heroicons": [],
         "reactIcons": []
@@ -1476,9 +1474,7 @@
       "replaces": {
         "lucide": [
           "Download",
-          "DownloadIcon",
-          "Save",
-          "SaveIcon"
+          "DownloadIcon"
         ],
         "heroicons": [],
         "reactIcons": []
@@ -1648,8 +1644,7 @@
       "replaces": {
         "lucide": [
           "Home",
-          "LayoutDashboard",
-          "LayoutGrid"
+          "LayoutDashboard"
         ],
         "heroicons": [],
         "reactIcons": []
@@ -2556,6 +2551,81 @@
           "GitBranch"
         ],
         "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "save",
+      "group": "ui",
+      "concept": "Save",
+      "tags": [
+        "save",
+        "store",
+        "keep"
+      ],
+      "replaces": {
+        "lucide": [
+          "Save",
+          "SaveIcon"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "pin-off",
+      "group": "ui",
+      "concept": "Unpin",
+      "tags": [
+        "unpin",
+        "pin",
+        "remove"
+      ],
+      "replaces": {
+        "lucide": [
+          "PinOff"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "layout-grid",
+      "group": "ui",
+      "concept": "Grid view",
+      "tags": [
+        "grid",
+        "tiles",
+        "view",
+        "layout"
+      ],
+      "replaces": {
+        "lucide": [
+          "LayoutGrid"
+        ],
+        "heroicons": [
+          "Squares2X2Icon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "list",
+      "group": "ui",
+      "concept": "List view",
+      "tags": [
+        "list",
+        "rows",
+        "view",
+        "layout"
+      ],
+      "replaces": {
+        "lucide": [
+          "List"
+        ],
+        "heroicons": [
+          "ListBulletIcon"
+        ],
         "reactIcons": []
       }
     }
