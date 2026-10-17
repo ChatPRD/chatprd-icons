@@ -2540,6 +2540,24 @@
         "heroicons": [],
         "reactIcons": []
       }
+    },
+    {
+      "name": "branch",
+      "group": "ui",
+      "concept": "Branch (a chat or a code branch)",
+      "tags": [
+        "branch",
+        "fork",
+        "git",
+        "split"
+      ],
+      "replaces": {
+        "lucide": [
+          "GitBranch"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
     }
   ],
   "spotGrid": {

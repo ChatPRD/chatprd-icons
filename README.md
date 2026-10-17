@@ -2,7 +2,7 @@
 
 ChatPRD's own icons, used across chatprd.ai and the ChatPRD app. There are two families:
 
-- **Line icons (127):** 24px, stroke-based, `currentColor`. There are 39 product concepts (document, template, prototype, project, scorecard, agent, MCP, integrations, file types, and so on), 77 UI glyphs (chevrons, close, check, search, theme, ratings, and so on), and 11 app-state and tool icons (tool, tool call, running, queued, streaming, pending, stop, cancelled, retry, disconnected, right panel). There are also two animated components, `IconSpinner` and `IconStreamingDots`.
+- **Line icons (128):** 24px, stroke-based, `currentColor`. There are 39 product concepts (document, template, prototype, project, scorecard, agent, MCP, integrations, file types, and so on), 78 UI glyphs (chevrons, close, check, search, theme, ratings, branch, and so on), and 11 app-state and tool icons (tool, tool call, running, queued, streaming, pending, stop, cancelled, retry, disconnected, right panel). There are also two animated components, `IconSpinner` and `IconStreamingDots`.
 - **Spot icons (12):** full-color, tonal product illustrations of the core concepts (one hue family each, plus neutrals), for feature cards, empty states and onboarding. Each has a full drawing (64px grid) and a simplified small drawing (24px grid), in 14 tones (7 for the site, 7 that follow the app's theme).
 
 Released as **`@chatprd/icons`** tarballs on [GitHub Releases](https://github.com/ChatPRD/chatprd-icons/releases), with semver. See the [CHANGELOG](./CHANGELOG.md). Code is MIT; the icon artwork is © ChatPRD, all rights reserved (see [LICENSE](./LICENSE)).

@@ -18,7 +18,7 @@ const require = createRequire(import.meta.url);
 
 test("every line icon renders with the default API", () => {
   const names = Object.keys(root.chatprdIcons);
-  assert.equal(names.length, 127);
+  assert.equal(names.length, 128);
   for (const name of names) {
     const out = html(root.chatprdIcons[name]);
     assert.match(out, /^<svg /, name);
