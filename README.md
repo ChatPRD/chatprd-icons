@@ -206,16 +206,17 @@ Rules of thumb: use one tone per row (don't mix `brand` and mono spots side by s
 
 ## Design spec
 
-**Grid.** 24×24 viewBox with 2px padding, so artwork sits in the 20×20 live area (2–22). Strokes may reach the padding edge but not past it. Square shapes are about 17×17, circles have a radius of 8.5, and tall or wide shapes are about 15×18.
+**Grid.** 24×24 viewBox. Artwork fills the box the way lucide does, so the icons read at the same size beside it: square shapes are about 18×18, circles have a radius of 9.25, and tall or wide shapes are about 16×19. Geometry stays inside 2.75–21.25, so strokes end just inside the edge.
 
 **Stroke.** 1.75px at 24px, `currentColor`, round caps and joins. There are no fills, except accent dots.
 
 **Geometry.** The set takes its geometry from the ChatPRD mark, which is built from interlocking pills (stadiums) drawn in one even line inside a soft squircle (corner radius about 26% of the size).
 
 - Corners are soft: a radius of 3.5–4.5 on containers (documents, windows, cards, calendar), where lucide uses 2. Small parts use a radius of 1–2.25.
-- Use pills and ovals where lucide uses rectangles. Chat is an oval bubble rather than a square one, and `integrations` is two offset, interlocking pills that echo the mark.
+- Chat is a rounded square with a short tail that meets the bubble in a crisp corner, and `chats`, `compose`, `coaching` and `streaming` share that bubble. `integrations` is two offset, interlocking rounded squares that echo the mark.
+- Keep insides simple. A container holds no decorative lines, at most two short lines that carry meaning, or one symbol. Containers themselves stay plain (a document is just the page and its fold).
 - Containers that hold another symbol (external link, compose, share, prototype) are drawn open, with a gap where the symbol crosses the edge, rather than overlapping it.
-- Lines inside a document or list get shorter toward the end (for example 7, then 4.5) so they read as text, not as a hamburger menu.
+- Where two lines stand for text, the second is shorter (for example 7, then 4.5) so they read as text, not as a hamburger menu.
 - No diagonal folded corners. The document fold is a rounded notch.
 
 **Accent dots.** Filled `currentColor` circles with a radius of 1.1–1.5, used only where they carry meaning: the period on info, alert and help; the agent's eyes and antenna; the spark on `sparkle`; the start of `roadmap`; the date on `calendar`; the lock's keyhole; and the ellipsis on the `more-*` icons.
@@ -271,13 +272,13 @@ The full brief, including the reasoning and acceptance checks, is in [docs/spot-
   | template | White card inside thin (3px) purple corner brackets, pink and purple text bars | purple + pink | none |
   | project | Neutral gray folder with a darker tab, a white page and a pink label strip | pink (on neutrals) | none |
   | scorecard | White clipboard, purple clip, three rising pink bars | pink + purple | green "passed" check (success) |
-  | coaching | One white oval bubble (1px edge) with a pink trend arrow | pink | none |
+  | coaching | One white rounded-square bubble (1px edge) with a pink trend arrow | pink | none |
   | prototype | White window with light-gray chrome and gray UI blocks; a pink cursor is the only color | pink | none |
   | agent | Pink robot head, white round eyes, purple antenna | pink + purple | none |
   | integrations | Two overlapping rounded squares (charcoal and pink); the overlap, in deep pink, is the connection | pink (on neutrals) | none |
   | team | Three avatars in a round cluster (charcoal, gray, pink) with hairline separators | pink (on neutrals) | none |
   | knowledge | Book with a charcoal cover and spine, white and paper pages, a pink ribbon | pink | none |
-  | chat | Light-gray oval bubble with a charcoal line and one pink line | pink | none |
+  | chat | Light-gray rounded-square bubble with a charcoal line and one pink line | pink | none |
   | security | Gold shield with a lighter left half and a white check. Semantic; do not change | gold (semantic, locked) | none |
 
 - **Codegen checks** (`manifest.spotRules`, run by `npm run icons`, `npm run check` and CI):
@@ -329,7 +330,7 @@ Versions follow semver. For the icon set that means:
 To release:
 
 1. Update `CHANGELOG.md` and bump `version` in `package.json` (and `manifest.json` `version` if the manifest's shape changed), in a PR.
-2. After it merges, tag `main`: `git tag v1.2.0 && git push origin v1.2.0`.
+2. After it merges, tag `main`: `git tag v1.3.0 && git push origin v1.3.0`.
 3. The **Release** workflow checks that the tag matches `package.json`, runs the checks, build and tests, runs `npm pack`, and attaches `chatprd-icons-<version>.tgz` to a GitHub Release.
 4. Consumers pick it up by changing the release URL in their `package.json`.
 

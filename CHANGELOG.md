@@ -2,6 +2,15 @@
 
 All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package uses [semver](https://semver.org/) (see "Releasing" in the README for what counts as major, minor and patch for icons).
 
+## 1.3.0 - 2026-10-17
+
+### Changed
+
+- Every line icon is redrawn to read as clearly as lucide at the same size. Glyphs now fill the box the way lucide's do (about 18×18 for squares, radius 9.25 for circles, up from 17 and 8.5), with the same 1.75 stroke, so they no longer look a size smaller beside it.
+- `chat` is a rounded square with a short tail meeting the bubble in a crisp corner, replacing the oval. `chats`, `compose`, `coaching` and `streaming` use the same bubble, and so do the `chat` and `coaching` spots.
+- Busy insides are simplified: `document` is now just the page and fold, `template` keeps two text lines, `model` drops its inner square, `keyboard` has one row of keys, and `company`, `bug`, `file-archive`, `prototype` and `coaching` carry fewer marks.
+- The README design spec describes the new live area, the simple-insides rule and the chat bubble.
+
 ## 1.2.0 - 2026-10-17
 
 ### Added
