@@ -2,6 +2,17 @@
 
 All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package uses [semver](https://semver.org/) (see "Releasing" in the README for what counts as major, minor and patch for icons).
 
+## 1.1.0 - 2026-10-17
+
+### Added
+
+- 27 line icons covering every remaining lucide and heroicons glyph chatprd-app uses (brand logos aside), so the app can draw all of its UI icons from this set:
+  - Theme: `sun`, `moon`, `monitor` (system theme).
+  - Account and chat: `log-out`, `quote`, `corner-down-right` (quoted reply), `thumbs-up`, `thumbs-down`, `heart`, `archive`.
+  - Panels and devices: `maximize`, `smartphone`, `keyboard`.
+  - Data and admin: `database`, `hard-drive`, `trending-down`, `bug`, `ticket`, `tag`, `palette`, `circle`.
+  - File types, drawn as `document` with the type in place of its text lines: `file-spreadsheet`, `file-video`, `file-audio`, `file-archive`, `file-slides`, `file-type`.
+
 ## 1.0.2 - 2026-10-17
 
 ### Fixed
