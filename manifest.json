@@ -2007,6 +2007,557 @@
         "heroicons": [],
         "reactIcons": []
       }
+    },
+    {
+      "name": "sun",
+      "group": "ui",
+      "concept": "Light theme",
+      "tags": [
+        "light",
+        "theme",
+        "day"
+      ],
+      "replaces": {
+        "lucide": [
+          "Sun",
+          "SunIcon"
+        ],
+        "heroicons": [
+          "SunIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "moon",
+      "group": "ui",
+      "concept": "Dark theme",
+      "tags": [
+        "dark",
+        "theme",
+        "night"
+      ],
+      "replaces": {
+        "lucide": [
+          "Moon",
+          "MoonIcon"
+        ],
+        "heroicons": [
+          "MoonIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "monitor",
+      "group": "ui",
+      "concept": "System theme / desktop",
+      "tags": [
+        "system",
+        "desktop",
+        "screen",
+        "computer"
+      ],
+      "replaces": {
+        "lucide": [
+          "Monitor",
+          "Laptop"
+        ],
+        "heroicons": [
+          "ComputerDesktopIcon (system theme)"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "log-out",
+      "group": "ui",
+      "concept": "Log out",
+      "tags": [
+        "sign out",
+        "logout",
+        "exit"
+      ],
+      "replaces": {
+        "lucide": [
+          "LogOut",
+          "LogOutIcon"
+        ],
+        "heroicons": [
+          "ArrowRightOnRectangleIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "maximize",
+      "group": "ui",
+      "concept": "Expand / full screen",
+      "tags": [
+        "expand",
+        "fullscreen",
+        "maximize",
+        "enlarge"
+      ],
+      "replaces": {
+        "lucide": [
+          "Maximize2",
+          "Expand"
+        ],
+        "heroicons": [
+          "ArrowsPointingOutIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "smartphone",
+      "group": "ui",
+      "concept": "Mobile / phone viewport",
+      "tags": [
+        "mobile",
+        "phone",
+        "device",
+        "viewport"
+      ],
+      "replaces": {
+        "lucide": [
+          "Smartphone"
+        ],
+        "heroicons": [
+          "DevicePhoneMobileIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "quote",
+      "group": "ui",
+      "concept": "Quote",
+      "tags": [
+        "quote",
+        "blockquote",
+        "citation",
+        "excerpt"
+      ],
+      "replaces": {
+        "lucide": [
+          "Quote"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "corner-down-right",
+      "group": "ui",
+      "concept": "Reply to / quoted from",
+      "tags": [
+        "reply",
+        "quoted",
+        "nested",
+        "indent"
+      ],
+      "replaces": {
+        "lucide": [
+          "CornerDownRight"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "thumbs-up",
+      "group": "ui",
+      "concept": "Good response",
+      "tags": [
+        "like",
+        "upvote",
+        "helpful",
+        "rating"
+      ],
+      "replaces": {
+        "lucide": [
+          "ThumbsUp"
+        ],
+        "heroicons": [
+          "HandThumbUpIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "thumbs-down",
+      "group": "ui",
+      "concept": "Bad response",
+      "tags": [
+        "dislike",
+        "downvote",
+        "unhelpful",
+        "rating"
+      ],
+      "replaces": {
+        "lucide": [
+          "ThumbsDown"
+        ],
+        "heroicons": [
+          "HandThumbDownIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "archive",
+      "group": "ui",
+      "concept": "Archive",
+      "tags": [
+        "archive",
+        "store",
+        "box"
+      ],
+      "replaces": {
+        "lucide": [
+          "Archive"
+        ],
+        "heroicons": [
+          "ArchiveBoxIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "ticket",
+      "group": "ui",
+      "concept": "Coupon / promotion code",
+      "tags": [
+        "coupon",
+        "promo",
+        "voucher",
+        "ticket"
+      ],
+      "replaces": {
+        "lucide": [
+          "Ticket"
+        ],
+        "heroicons": [
+          "TicketIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "tag",
+      "group": "ui",
+      "concept": "Tag / label",
+      "tags": [
+        "tag",
+        "label",
+        "price"
+      ],
+      "replaces": {
+        "lucide": [
+          "Tag"
+        ],
+        "heroicons": [
+          "TagIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "bug",
+      "group": "ui",
+      "concept": "Bug / issue",
+      "tags": [
+        "bug",
+        "issue",
+        "defect",
+        "error report"
+      ],
+      "replaces": {
+        "lucide": [
+          "Bug"
+        ],
+        "heroicons": [
+          "BugAntIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "database",
+      "group": "ui",
+      "concept": "Database / data source",
+      "tags": [
+        "database",
+        "data",
+        "storage",
+        "records"
+      ],
+      "replaces": {
+        "lucide": [
+          "Database"
+        ],
+        "heroicons": [
+          "CircleStackIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "hard-drive",
+      "group": "ui",
+      "concept": "Drive / file storage",
+      "tags": [
+        "drive",
+        "storage",
+        "disk",
+        "files"
+      ],
+      "replaces": {
+        "lucide": [
+          "HardDrive"
+        ],
+        "heroicons": [
+          "ServerStackIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "trending-down",
+      "group": "ui",
+      "concept": "Trending down / decline",
+      "tags": [
+        "decline",
+        "drop",
+        "decrease",
+        "metric"
+      ],
+      "replaces": {
+        "lucide": [
+          "TrendingDown"
+        ],
+        "heroicons": [
+          "ArrowTrendingDownIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "heart",
+      "group": "ui",
+      "concept": "Love / favorite",
+      "tags": [
+        "love",
+        "favorite",
+        "like"
+      ],
+      "replaces": {
+        "lucide": [
+          "Heart"
+        ],
+        "heroicons": [
+          "HeartIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "keyboard",
+      "group": "ui",
+      "concept": "Keyboard shortcuts",
+      "tags": [
+        "keyboard",
+        "shortcuts",
+        "hotkeys"
+      ],
+      "replaces": {
+        "lucide": [
+          "Keyboard"
+        ],
+        "heroicons": [
+          "KeyboardIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "palette",
+      "group": "ui",
+      "concept": "Style / colors",
+      "tags": [
+        "palette",
+        "color",
+        "style",
+        "css",
+        "design"
+      ],
+      "replaces": {
+        "lucide": [
+          "Palette",
+          "PaintBucket"
+        ],
+        "heroicons": [
+          "PaintBrushIcon",
+          "SwatchIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "circle",
+      "group": "ui",
+      "concept": "Empty / not done",
+      "tags": [
+        "circle",
+        "unchecked",
+        "todo",
+        "empty"
+      ],
+      "replaces": {
+        "lucide": [
+          "Circle"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-spreadsheet",
+      "group": "product",
+      "concept": "Spreadsheet file",
+      "tags": [
+        "spreadsheet",
+        "xlsx",
+        "csv",
+        "sheet"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileSpreadsheet",
+          "LucideFileSpreadsheet"
+        ],
+        "heroicons": [
+          "TableCellsIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-video",
+      "group": "product",
+      "concept": "Video file",
+      "tags": [
+        "video",
+        "mp4",
+        "movie",
+        "recording"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileVideo",
+          "LucideFileVideo"
+        ],
+        "heroicons": [
+          "FilmIcon (file context)"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-audio",
+      "group": "product",
+      "concept": "Audio file",
+      "tags": [
+        "audio",
+        "mp3",
+        "sound",
+        "recording"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileAudio",
+          "LucideFileAudio"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-archive",
+      "group": "product",
+      "concept": "Archive / zip file",
+      "tags": [
+        "zip",
+        "archive",
+        "compressed"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileArchive",
+          "LucideFileArchive"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-slides",
+      "group": "product",
+      "concept": "Slides / presentation file",
+      "tags": [
+        "slides",
+        "pptx",
+        "presentation",
+        "deck"
+      ],
+      "replaces": {
+        "lucide": [
+          "Presentation",
+          "FilePresentation"
+        ],
+        "heroicons": [
+          "PresentationChartBarIcon"
+        ],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "file-type",
+      "group": "product",
+      "concept": "Word / formatted document",
+      "tags": [
+        "docx",
+        "word",
+        "rich text",
+        "export"
+      ],
+      "replaces": {
+        "lucide": [
+          "FileType"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
+    },
+    {
+      "name": "branch",
+      "group": "ui",
+      "concept": "Branch (a chat or a code branch)",
+      "tags": [
+        "branch",
+        "fork",
+        "git",
+        "split"
+      ],
+      "replaces": {
+        "lucide": [
+          "GitBranch"
+        ],
+        "heroicons": [],
+        "reactIcons": []
+      }
     }
   ],
   "spotGrid": {
