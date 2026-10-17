@@ -2,6 +2,12 @@
 
 All notable changes to `@chatprd/icons`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package uses [semver](https://semver.org/) (see "Releasing" in the README for what counts as major, minor and patch for icons).
 
+## 1.2.0 - 2026-10-17
+
+### Added
+
+- `save`, `pin-off`, `layout-grid` and `list`, so actions that sit next to their look-alikes stay distinct: Save beside Export (it had borrowed `download`), Unpin beside Pin, and the grid/list view toggle (it had borrowed `home` and `tasks`). The manifest now maps lucide `Save`, `PinOff`, `LayoutGrid` and `List` to these instead.
+
 ## 1.1.0 - 2026-10-17
 
 ### Added
